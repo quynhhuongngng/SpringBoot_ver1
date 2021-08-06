@@ -68,7 +68,8 @@ public class ProductController {
 		model.addAttribute("list5", list);
 		return "product/list";
 	}
-
+	
+	// Hiển thị danh sách đặc biệt, tương ứng với mỗi id là 1 case hiển thị trong ProductDAO
 	@RequestMapping("/product/list-by-special/{id}")
 	public String listBySpecial(Model model, @PathVariable("id") Integer id) {
 		User user = (User) session.getAttribute("user");
