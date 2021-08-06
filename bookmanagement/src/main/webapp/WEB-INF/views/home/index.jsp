@@ -52,7 +52,7 @@
 			<span style="color: #fff; text-align: left; font-size: 26px;">SẢN PHẨM NỔI BẬT</span> 
 			<span style="color: #fff; float: right; font-size: 16px; padding: 8px">
 				<a href="/product/list-by-special/4" style="color: #fff; text-decoration: none;">Xem tất cả</a></span>
-				<!-- /product/list-by-special/4 => số 4 là case 4 trong ProductDAO -->
+				<!--/product/list-by-special/4 => 4 là case 4 trong productDAO => hiển thị ds đặc biệt  -->
 		</div>	
 		<div style="padding: 20px 0px 0px 10px; margin-top: -10px; height: auto; justify-content: center;">
 			<jsp:include page="../product/list_special.jsp" />

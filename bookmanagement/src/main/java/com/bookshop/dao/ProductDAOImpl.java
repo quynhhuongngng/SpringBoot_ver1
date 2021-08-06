@@ -87,7 +87,8 @@ public class ProductDAOImpl implements ProductDAO{
 		List<Product> list=query.getResultList();
 		return list;
 	}
-
+	
+	
 	@Override
 	public List<Product> findBySpecial(Integer id) {
 		Session session=factory.getCurrentSession();
@@ -111,7 +112,7 @@ public class ProductDAOImpl implements ProductDAO{
 				break;
 				
 			case 4://dac biet
-				hql="FROM Product p WHERE p.special=true ORDER BY p.productDate DESC";
+				hql="FROM Product p WHERE p.special=true ORDER BY p.productDate DESC"; //link đến 
 				break;
 		}
 		query=session.createQuery(hql,Product.class);
